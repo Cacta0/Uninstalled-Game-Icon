@@ -1,0 +1,91 @@
+{
+  "name": "Uninstalled Game Icon",
+  "author": "Gubas",
+  "version": "v1.0",
+  "description": "Adds a little install icon to uninstalled games for Big Picture View.",
+  "target": "Library",
+  "manifest_version": 9,
+  "inject": {
+    "shared.css": ["bigpicture"]
+  },
+  "patches": {
+    "Install Icon": {
+      "type": "dropdown",
+			"default": "Empty",
+      "values": {
+          "Empty": {
+              "--install-icon": [
+                "url(\"/themes_custom/Uninstalled%20Game%20Icon/SVGs/installEmpty.svg\")",
+                "bigpicture"
+              ]
+          },
+          "Full": {
+              "--install-icon": [
+                "url(\"/themes_custom/Uninstalled%20Game%20Icon/SVGs/installFull.svg\")",
+                "bigpicture"
+              ]
+          }
+      }
+    },
+    "Background Style": {
+      "type": "dropdown",
+			"default": "Deck Verified",
+      "values": {
+          "Family Copies": {
+              "--blur": [
+                "0",
+                "bigpicture"
+              ],
+              "--outline": [
+                "1",
+                "bigpicture"
+              ],
+              "--opacity": [
+                ".3",
+                "bigpicture"
+              ],
+              "--padding": [
+                "1",
+                "bigpicture"
+              ]
+          },
+          "Deck Verified": {
+              "--blur": [
+                "1",
+                "bigpicture"
+              ],
+              "--outline": [
+                "0",
+                "bigpicture"
+              ],
+              "--opacity": [
+                ".7",
+                "bigpicture"
+              ],
+              "--padding": [
+                "2",
+                "bigpicture"
+              ]
+          }
+      }
+    },
+    "Show When Focused": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+          "No": {
+            "--focus": [
+              "0",
+              "bigpicture"
+            ]
+          },
+          "Yes": {
+            "--focus": [
+              "1",
+              "bigpicture"
+            ]
+          }
+      }
+  }
+  }
+}
