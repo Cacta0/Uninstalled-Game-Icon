@@ -11,7 +11,7 @@
 
 /*---- Style for home Most Recent Tile (WARNING THIS CAN OVERRIDE OTHER HOME TILES ICON POSITIONING)----*/
 /*Show Icon when not in focus*/
-.Panel[role="listitem"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus) .Panel[role="link"] > div:last-child::after {
+.Panel[role="listitem"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus):not(:has(._3BNwjsy5WltxayFptkx3KF)) .Panel[role="link"] > div:last-child::after {
   content: var(--install-icon);
   position: absolute;
   z-index: 100;
@@ -31,13 +31,13 @@
 }
 
 /*Hide Icon when in focus*/
-.Panel[role="listitem"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus) .Panel[role="link"]:focus > div:last-child::after {
+.Panel[role="listitem"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus):not(:has(._3BNwjsy5WltxayFptkx3KF)) .Panel[role="link"]:focus > div:last-child::after {
   opacity: 0;
 }
 
 /*Show Icon in the deck verified when in focus*/
 /*_3VPnvw_CDKU-PQKK1pSDlN.Tl-6lFIeV1vcxFCcf19ty._3kDT9HSaC2BYFyAndTzQY4 holds the verified badge icons*/
-.Panel[role="listitem"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus) ._3VPnvw_CDKU-PQKK1pSDlN.Tl-6lFIeV1vcxFCcf19ty._3kDT9HSaC2BYFyAndTzQY4::before {
+.Panel[role="listitem"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus):not(:has(._3BNwjsy5WltxayFptkx3KF)) ._3VPnvw_CDKU-PQKK1pSDlN.Tl-6lFIeV1vcxFCcf19ty._3kDT9HSaC2BYFyAndTzQY4::before {
   content: "";
   display: inline-block;
   width: calc(20px * var(--focus));
@@ -49,7 +49,7 @@
 
 /*---- Style for main library tiles and home tiles ----*/
 /*Show Icon when not in focus*/
-.Panel[role="link"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus) > div:last-child::after {
+.Panel[role="link"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus):not(:has(._1PbL3TgQGIsmPs2HZkpCkb)):not(:has(._3BNwjsy5WltxayFptkx3KF)) > div:last-child::after {
   content: var(--install-icon);
   position: absolute;
   z-index: 100;
@@ -69,13 +69,13 @@
 }
 
 /*Hide Icon when in focus*/
-.Panel[role="link"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus):focus > div:last-child::after {
+.Panel[role="link"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus):not(:has(._1PbL3TgQGIsmPs2HZkpCkb)):not(:has(._3BNwjsy5WltxayFptkx3KF)):focus > div:last-child::after {
   opacity: 0;
 }
 
 /*Show Icon in the deck verified when in focus*/
 /*_3VPnvw_CDKU-PQKK1pSDlN.Tl-6lFIeV1vcxFCcf19ty._3kDT9HSaC2BYFyAndTzQY4 holds the verified badge icons*/
-.Panel[role="link"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus) ._3VPnvw_CDKU-PQKK1pSDlN.Tl-6lFIeV1vcxFCcf19ty._3kDT9HSaC2BYFyAndTzQY4::before {
+.Panel[role="link"]:has(.DownloadArrow, .N8aJrSpxQ6II4CY_aFdYI, .QTJZotuAt67vK7Sa2Wjus):not(:has(._3BNwjsy5WltxayFptkx3KF)) ._3VPnvw_CDKU-PQKK1pSDlN.Tl-6lFIeV1vcxFCcf19ty._3kDT9HSaC2BYFyAndTzQY4::before {
   content: "";
   display: inline-block;
   width: calc(20px * var(--focus));
